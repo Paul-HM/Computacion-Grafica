@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <title>Cuestionario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f0;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 40px auto;
+            text-align: center;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        label {
+            font-weight: bold;
+            color: #2e5940;
+        }
+
+        p {
+            display: block;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            color: #2e5940;
+        }
+
+        label.pregunta {
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        label.opcion {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        input[type="time"],
+        input[type="url"],
+        input[type="search"],
+        input[type="week"],
+        input[type="month"],
+        input[type="datetime-local"],
+        textarea {
+            width: 90%;
+            padding: 10px;
+            border: 2px solid #4a7c59;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            accent-color: #4a7c59;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4a7c59;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 25px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2e5940;
+        }
+    </style>
+</head>
+</head>
+<body>
+    <form action="#" method="post">
+        <h2>Cuestionario</h2>
+
+        <label for="p1" class="pregunta">1. ¿Cuál es tu nombre completo?</label><br>
+        <input type="text" id="p1" ><br><br>
+
+        <label for="p2" class="pregunta">2. ¿Cuál es tu correo electrónico?</label><br>
+        <input type="email" id="p2" ><br><br>
+
+        <label for="p3" class="pregunta">3. ¿Cuál es tu edad?</label><br>
+        <input type="number" id="p3" ><br><br>
+
+        <label for="p4" class="pregunta">4. ¿Cuál es tu fecha de nacimiento?</label><br>
+        <input type="date" id="p4" ><br><br>
+
+        <label for="p5">5. ¿Cuál es tu color favorito?</label><br>
+        <input type="color" id="p5" ><br><br>
+
+        <p>6. ¿Con qué frecuencia escuchas música en el día?</p>
+
+        <input type="radio" id="frec1" name="frecuencia" value="siempre">
+        <label for="frec1" class="opcion">Todo el día</label><br>
+
+        <input type="radio" id="frec2" name="frecuencia" value="mucho">
+        <label for="frec2" class="opcion">Varias veces al día</label><br>
+
+        <input type="radio" id="frec3" name="frecuencia" value="poco">
+        <label for="frec3" class="opcion">Una vez al día</label><br>
+
+        <input type="radio" id="frec4" name="frecuencia" value="nunca">
+        <label for="frec4" class="opcion">Casi nunca</label><br><br>
+        
+        <p>7. ¿Qué generos musicales te gustan? Selecciona todos los que apliquen</p>
+      
+        <input type="checkbox" id="gen1" name="generos" value="rock">
+        <label for="gen1" class="opcion">Rock</label><br>
+
+        <input type="checkbox" id="gen2" name="generos" value="pop">
+        <label for="gen2" class="opcion">Pop</label><br>
+
+        <input type="checkbox" id="gen3" name="generos" value="jazz">
+        <label for="gen3" class="opcion">Jazz</label><br>
+
+        <input type="checkbox" id="gen4" name="generos" value="reggae">
+        <label for="gen4" class="opcion">Reggae</label><br>
+
+        <input type="checkbox" id="gen5" name="generos" value="clásica">
+        <label for="gen5" class="opcion">Música Clásica</label><br>
+
+        <input type="checkbox" id="gen6" name="generos" value="electrónica">
+        <label for="gen6" class="opcion">Electrónica</label><br>
+
+        <input type="checkbox" id="gen7" name="generos" value="urbana">
+        <label for="gen7" class="opcion">Urbana</label><br>
+
+        <input type="checkbox" id="gen8" name="generos" value="metal">
+        <label for="gen8" class="opcion">Metal</label><br>
+
+        <p class="pregunta">8. ¿Qué plataforma utilizas principalmente para escuchar música?</p>
+
+        <input type="checkbox" id="plat1" name="plataformas" value="spotify">
+        <label for="plat1" class="opcion">Spotify</label><br>
+
+        <input type="checkbox" id="plat2" name="plataformas" value="apple_music">
+        <label for="plat2" class="opcion">Apple Music</label><br>
+
+        <input type="checkbox" id="plat3" name="plataformas" value="youtube_music">
+        <label for="plat3" class="opcion">YouTube Music</label><br>
+
+        <input type="checkbox" id="plat4" name="plataformas" value="soundcloud">
+        <label for="plat4" class="opcion">SoundCloud</label><br>
+
+        <input type="checkbox" id="plat5" name="plataformas" value="other">
+        <label for="plat5" class="opcion">Otra</label><br>
+
+        <p class="pregunta">9. ¿Por qué prefieres esa plataforma sobre las demás?</p>
+        <textarea rows="5" cols="40" placeholder="Escribe tu comentario aquí..." maxlength="200"></textarea><br><br>
+
+        <label for="p10" class="pregunta">10. Del 1 al 10, ¿qué tan satisfecho estás con tu trabajo o estudio actual?</label><br>
+        <input type="range" id="p10" min="1" max="10"><br><br>
+
+        <label for="p11" class="pregunta">11. ¿A qué hora sueles despertarte?</label><br>
+        <input type="time" id="p11"><br><br>
+
+        <label for="p12" class="pregunta">12. ¿Tienes un sitio web o red social que quieras compartir?</label><br>
+        <input type="url" id="p12" placeholder="https://..."><br><br>
+
+        <label for="p13" class="pregunta">13. Sube una foto tuya (opcional)</label><br>
+        <input type="file" id="p13"><br><br>
+
+        <label for="p14" class="pregunta">14. ¿En qué semana del año estamos según tú?</label><br>
+        <input type="week" id="p14"><br><br>
+
+        <label for="p15" class="pregunta">15. ¿Cuál es tu mes favorito del año?</label><br>
+        <input type="month" id="p15"><br><br>
+
+        <label for="p16" class="pregunta">16. ¿Cuándo fue la última vez que saliste de viaje? (fecha y hora aprox.)</label><br>
+        <input type="datetime-local" id="p16"><br><br>
+
+        <label for="p17" class="pregunta">17. Busca y escribe tu ciudad natal</label><br>
+        <input type="search" id="p17" placeholder="Ej: Pereira"><br><br>
+
+        <p class="pregunta">18. ¿Cuál es tu comida favorita?</p>
+
+        <input type="radio" id="comida1" name="comida" value="italiana">
+        <label for="comida1" style="vertical-align: middle;" class="opcion">Italiana</label><br>
+
+        <input type="radio" id="comida2" name="comida" value="mexicana">
+        <label for="comida2" style="vertical-align: middle;" class="opcion">Mexicana</label><br>
+
+        <input type="radio" id="comida3" name="comida" value="colombiana">
+        <label for="comida3" style="vertical-align: middle;" class="opcion">Colombiana</label><br>
+
+        <input type="radio" id="comida4" name="comida" value="asiatica">
+        <label for="comida4" style="vertical-align: middle;" class="opcion">Asiática</label><br><br>
+
+        <label for="p19" class="pregunta">19. ¿Cuántas horas duermes en promedio por noche?</label><br>
+        <input type="number" id="p19" min="0" max="24"><br><br>
+
+        <label for="p20" class="pregunta">20. ¿Algo más que quieras contarnos?</label><br>
+        <textarea id="p20" rows="4" cols="40" placeholder="Escribe aquí..." maxlength="300"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
